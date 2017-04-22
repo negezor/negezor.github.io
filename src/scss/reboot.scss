@@ -1,0 +1,14 @@
+@import 'variables';
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: $font;
+}
+
+body {
+	margin: 0;
+	background-color: $body-background;
+}

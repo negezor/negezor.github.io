@@ -1,0 +1,101 @@
+/**
+ * Секции
+ */
+
+.section {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 125px 100px;
+}
+@media (max-width: 1000px) {
+	.section {
+		padding: 100px 50px;
+	}
+}
+@media (max-width: 600px) {
+	.section {
+		padding: 80px 30px;
+	}
+}
+
+.section h3.title {
+	color: #414a4f;
+	text-transform: capitalize;
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.section p {
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+/**
+ * Заглавная секция
+ */
+
+.section-jumbotron {
+	justify-content: center;
+	min-height: 100vh;
+	text-align: center;
+	color: #fff;
+
+	& h1 {
+		font: bold 60px 'Open Sans', sans-serif;
+		margin-bottom: 15px;
+	}
+
+	& h3 {
+		font: normal 28px 'Open Sans', sans-serif;
+		margin-bottom: 40px;
+	}
+
+	& a.btn {
+		padding: 20px 46px;
+	}
+	@media (max-width: 800px) {
+		& {
+			min-height: 600px;
+		}
+
+		& h1 {
+			font-size: 48px;
+		}
+
+		& h3 {
+			font-size: 24px;
+		}
+
+		& a.btn {
+			padding: 15px 40px;
+		}
+	}
+}
+
+.section-jumbotron-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-color: #2196F3;
+	background-image: url("../img/background.jpg");
+
+	&:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		opacity: 0.75;
+		background-color: #414a4f;
+	}
+}

@@ -1,0 +1,60 @@
+/**
+ * Навигация
+ */
+.header {
+	position: absolute;
+
+	top: 0;
+	left: 0;
+	z-index: 10;
+
+	display: flex;
+
+	align-items: center;
+	justify-content: space-between;
+
+	width: 100%;
+	padding: 35px 100px 0;
+}
+
+.header a {
+	text-decoration: none;
+	color: $header-color-link;
+}
+
+.header a:hover {
+	color: $header-color-link-hover;
+}
+
+.navbar {
+	display: flex;
+}
+
+.navbar a {
+	margin: 0 15px;
+}
+
+.navbar a:first-child{
+	margin-left: 0;
+}
+
+.navbar a:last-child{
+	margin-right: 0;
+}
+
+@media (max-width: 1000px){
+	.header {
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	.header {
+		flex-direction: column;
+	}
+
+	.header h2 {
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "name": "negezor.github.io",
+  "version": "0.0.1",
+  "description": "GitHub page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/negezor/negezor.github.io.git"
+  },
+  "keywords": [
+    "website",
+    "negezor",
+    "page",
+    "github"
+  ],
+  "author": "https://github.com/negezor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/negezor/negezor.github.io/issues"
+  },
+  "homepage": "https://github.com/negezor/negezor.github.io#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "css-loader": "^0.28.0",
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.2",
+    "resolve-url-loader": "^2.0.2",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.16.1",
+    "uglifyjs-webpack-plugin": "^0.4.3",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.4.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "normalize.css": "^6.0.0"
+  }
+}
